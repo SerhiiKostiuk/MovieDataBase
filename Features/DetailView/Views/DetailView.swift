@@ -89,7 +89,7 @@ struct DetailView: View {
                     HStack {
                         Text(viewModel.releaseYear)
                         
-                        
+                        Text(viewModel.movieDuration)
                         
                     }
 

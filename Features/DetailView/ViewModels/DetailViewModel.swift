@@ -56,6 +56,11 @@ import UIKit
     }
     
     var movieDuration: String {
+        guard let durationInMin = movie?.runtime else { return .empty }
         
+        let hours = durationInMin / 60
+        let minutes = durationInMin % 60
+        
+        return "\(hours) hours " + "\(minutes) minutes"
     }
 }
